@@ -141,32 +141,9 @@ h1,h2,h3,h4,h5{
 /*About Us*/
 
 .section-about{
-    padding: 4.8rem 0 9.6rem 0;
-    background-color: var(--white);
+    height:1000px;
 }
 
-.about-us{
-    max-width: 130rem;
-    margin: 0 auto;
-    padding: 0 3.2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    align-items: center;
-}
-
-.about-description{
-    color: var(--grey);
-}
-
-.about-text-box{
-    flex:1
-}
-
-.about-content{
-    flex:1
-    
-}
 
 
 
