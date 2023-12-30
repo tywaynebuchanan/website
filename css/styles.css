@@ -166,26 +166,49 @@ h1,h2,h3,h4,h5{
 }
 
 .about-text-box{
-    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
 }
 
 .about-content{
    display: flex;
    flex-direction: column;
    gap: 40px;
+
     
 }
 
 .about-us-pictures{
-    dispaly:flex;
-    flex-direction: row;
-    align-items: center;
-    gap:40px;
+    display: flex;
+    justify-content: space-between;
+    gap:5px;
 }
 
 .about-us-images{
-    width:30%;
+    width:32%;
+
 }
+
+
+//Company Values Section
+
+.section-company-values{
+    padding: 4.8rem 0 9.6rem 0;
+    background-color: var(--primary-blue);
+}
+
+.company-values{
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 6rem;
+    align-items: center;
+}
+
 
 
 
