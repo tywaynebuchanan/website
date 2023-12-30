@@ -15,15 +15,14 @@
     --roboto-con: "Roboto Condensed"
 }
 
-body {
+
+body{
     overflow-x: hidden;
 }
 
 html{
     overflow-x: hidden;
 }
-
-
 
 h1,h2,h3,h4,h5{
     font-family: var(--roboto-con);
@@ -145,8 +144,48 @@ h1,h2,h3,h4,h5{
 
 /*About Us*/
 
+.section-about{
+    padding: 4.8rem 0 9.6rem 0;
+    background-color: var(--white);
+}
 
+.about-us{
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 6rem;
+    align-items: center;
+}
 
+.about-description{
+    color: var(--grey);
+    font-size:1.2rem;
+    font-family: "Karla",san-serif;
+}
+
+.about-text-box{
+    flex:1;
+}
+
+.about-content{
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+    
+}
+
+.about-us-pictures{
+    dispaly:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:40px;
+}
+
+.about-us-images{
+    width:30%;
+}
 
 
 
