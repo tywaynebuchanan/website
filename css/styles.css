@@ -16,7 +16,11 @@
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
+}
+
+html{
+    overflow-x: hidden;
 }
 
 
