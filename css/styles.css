@@ -1,0 +1,180 @@
+/* Settings for the entire site*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --primary-blue: #0A6CFF;
+    --white: #FFFFFF;
+    --grey: #636369;
+    --black: #1F1F23;
+    --light-grey: #EEEEF8;
+    --roboto-con: "Roboto Condensed"
+}
+
+
+body{
+    overflow: hidden;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: var(--roboto-con);
+}
+
+.heading-primary{
+    font-size: 80px;
+    line-height:0.9;
+    margin-bottom: 2rem;
+}
+
+.white{
+    color:var(--white)
+}
+
+.black{
+    color:var(--black);
+}
+
+/*Navigation Bar*/
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    height: 8rem;
+    padding: 0 4.8rem;
+    position: relative;
+}
+
+.main-nav-list{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style-type: none;
+}
+.main-nav-link {
+    color: var(--grey);
+    font-family: var(--roboto-con);
+    text-decoration: none;
+}
+
+.main-nav-link.nav-cta:link,.main-nav-link.nav-cta:visited{
+    padding: 1.2rem 2.4rem;
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.main-nav-link.nav-cta:hover,.main-nav-link.nav-cta:active{
+    background-color: blue;
+ }
+
+
+/* Hero Section */
+
+.section-hero{
+    background-color: var(--primary-blue);
+}
+.sub-title{
+    margin-bottom:10px;
+}
+.hero{
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.hero-text-box{
+    flex: 1;
+}
+.hero-text-box h4{
+    color: var(--white);
+    font-weight: 300;
+}
+
+.hero-description{
+    color: var(--white);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.cta-btn{
+    padding: 1.2rem 2.4rem;
+    background-color: var(--white);
+    color: var(--primary-blue);
+    font-family: var(--roboto-con);
+    text-decoration: none;
+}
+
+.cta-btn:hover{
+    background-color: blue;
+    color: var(--white);
+}
+
+.hero-img-box{
+    width: 100%;
+    flex:1;
+}
+
+.hero-description{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+    font-family: "Karla", sans-serif;
+}
+
+
+.hero-img{
+    display: flex;
+    width: 120%;
+}
+
+/*About Us*/
+
+.section-about{
+    padding: 4.8rem 0 9.6rem 0;
+    background-color: var(--var(--primary-blue));
+}
+
+.about-us{
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.about-description{
+    color: var(--grey);
+}
+
+.about-text-box{
+    flex:1
+}
+
+.about-content{
+    flex:1
+    
+}
+
+
+
+
+
+@media (max-width: 389px) {
+    .hero{
+        display:flex;
+    }
+  }
+ 
