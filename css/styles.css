@@ -12,6 +12,7 @@
     --grey: #636369;
     --black: #1F1F23;
     --light-grey: #EEEEF8;
+    --text-color: #67474E;
     
 }
 
@@ -252,7 +253,7 @@ h1,h2,h3,h4,h5{
 .our-services{
     max-width: 120rem;
     margin: 0 auto;
-    padding: 20rem 4rem;
+    padding: 6rem 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -319,18 +320,78 @@ h1,h2,h3,h4,h5{
     background-color: blue;
 }
 
-//Testimonial Section 
 
 .testimonials-section{
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
    
 }
 
 .testimonials{
+    width: 120rem;
     display: flex;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+   
 }
+
+.testimonials-content{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:40px;
+    margin-bottom: 40px;
+    background-color: var(--light-grey);
+}
+
+.content .image-box{
+    width: 100%;
+    /* border-raduis: 100px; */
+}
+.content .image-box img{
+    width: 15%;
+    border-radius: 50%;
+    
+}
+
+.image-box{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.image-box h4{
+    color: var(--text-color);
+}
+
+.image-box p{
+    font-family: "Karla", sans-serif;
+    font-size: 1rem;
+}
+
+.testimonial-text{
+    font-family: "Karla", sans-serif;
+    font-size: 1.2rem;
+    color: var(--grey);
+}
+
+.testimonials-container{
+    background-color: var(--light-grey);
+    padding: 2rem 4rem;
+}
+
 
 
 
