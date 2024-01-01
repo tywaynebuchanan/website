@@ -88,6 +88,23 @@ a {
 	background-color: blue;
 }
 
+.btn-mobile-nav{
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-mobile-nav{
+    height: 3rem;
+    width: 3rem;
+    color: #6f6f6f;
+}
+
+.icon-mobile-nav[name = "close-outline"]{
+    display: none;
+}
+
 /* Hero Section */
 
 .section-hero {
@@ -630,6 +647,15 @@ textarea {
 }
 
 @media (max-width: 390px) {
+
+      .header{
+        padding: 0 3.2rem;
+    }
+
+    .main-nav-list{
+        gap: 3.2rem;
+    }
+
 	.heading-primary {
 		font-size: 2rem;
 		line-height: 0.9;
@@ -801,4 +827,54 @@ textarea {
 		justify-content: center;
 		padding: 1rem;
 	}
+
+    .btn-mobile-nav
+    {
+        display: block;
+    }
+
+    .main-nav{
+        background-color:whitesmoke;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+        /* Make it unacccessable to mouse and keyboard */
+        pointer-events: none;
+        /* Hide it from screen readers*/
+        visibility: none;
+    }
+
+    .nav-open .main-nav
+    {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .main-nav-list{
+        flex-direction: column;
+
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited{
+        font-size: 1rem;
+    }
+
+    .nav-open .icon-mobile-nav[name = "close-outline"]{
+        display: block;
+    }
+    .nav-open .icon-mobile-nav[name = "menu-outline"]{
+        display: none;
+    }
 }
