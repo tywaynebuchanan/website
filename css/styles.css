@@ -20,7 +20,7 @@ body {
 
 html {
 	overflow-x: hidden;
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 h1,
@@ -31,8 +31,10 @@ h5 {
 	font-family: "Roboto Condensed", sans-serif;
 }
 
-p,li,a{
-    font-family: "Karla",sans-serif;
+p,
+li,
+a {
+	font-family: "Karla", sans-serif;
 }
 
 .heading-primary {
@@ -386,7 +388,7 @@ p,li,a{
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
-    padding: 6rem 0rem 0rem;
+	padding: 6rem 0rem 0rem;
 }
 
 .cta-content {
@@ -396,238 +398,238 @@ p,li,a{
 	color: #fff;
 	padding: 6rem 0rem;
 	text-align: center;
-    height:50vh;
-    width:100%;
-    max-width:120rem;
-    
+	height: 50vh;
+	width: 100%;
+	max-width: 120rem;
 }
 
-
-
-.cta-text-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width:100%;
-    margin: 0 auto;
-    max-width:50rem;
+.cta-text-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 50rem;
 }
 
-.cta-text-content h1{
-    font-size: 60px;
-    font-weight: 300;
-
+.cta-text-content h1 {
+	font-size: 60px;
+	font-weight: 300;
 }
 
-.cta-text-content p{
-    font-family: "Karla",sans-serif;
-    font-size: 1rem;
+.cta-text-content p {
+	font-family: "Karla", sans-serif;
+	font-size: 1rem;
 }
 
 /* Footer Section CSS*/
 
-.footer{
-    background-color: var(--black);
-    color: var(--white);
-     max-width: 120rem;
+.footer {
+	background-color: var(--black);
+	color: var(--white);
+	max-width: 120rem;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
-    padding: 6rem 0rem;
-    justify-content: center;
-    
+	padding: 6rem 0rem;
+	justify-content: center;
 }
 
 /* Footer Section CSS End*/
-.footer-container  {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   gap: 200px;
+.footer-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 200px;
 }
 
-.logo-section-title{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.logo-section-title {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
-.logo-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap:130px;
-}
-
-.footer-links-title{
-    margin-bottom:10px;
+.logo-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 130px;
 }
 
-.footer-links ul,li{
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.footer-links-title {
+	margin-bottom: 10px;
 }
-.footer-links a{
-    text-decoration: none;
+
+.footer-links ul,
+li {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
-.footer-links a:visited{
-    color: white;
-    
+.footer-links a {
+	text-decoration: none;
+}
+.footer-links a:visited {
+	color: white;
 }
 
 /* Contact Section*/
 
-
-
 .contact-hero {
-  background-color: var(--primary-blue);
+	background-color: var(--primary-blue);
 }
 
 .contact-container {
-  position: relative;
-  max-width: 130rem;
-  margin: 0 auto;
-  padding: 0 6rem;
-  background-image: url("/img/cta-image.jpeg");
-  background-size: cover;
-  background-position: start;
-  color: #fff;
-  height: 50vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	position: relative;
+	max-width: 130rem;
+	margin: 0 auto;
+	padding: 0 6rem;
+	background-image: url("/img/cta-image.jpeg");
+	background-size: cover;
+	background-position: start;
+	color: #fff;
+	height: 50vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .contact-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Adjust the alpha (last value) to control the darkness */
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(
+		0,
+		0,
+		0,
+		0.8
+	); /* Adjust the alpha (last value) to control the darkness */
 }
 
 .contact-hero-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .contact-hero-content h1 {
-  font-size: 60px;
-  font-weight: 400;
-  z-index: 1;
+	font-size: 60px;
+	font-weight: 400;
+	z-index: 1;
 }
 
-.contact-box-text{
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
-   justify-content: center;
+.contact-box-text {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	justify-content: center;
 }
 
-.contact-list{
-     display: flex;
-   flex-direction: column;
-   gap: 2rem;
+.contact-list {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 }
 
-.contact-list-item{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.contact-list-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
-.contact-list-item i{
-    font-size: 2rem;
-    color: white;
-    background-color: var(--primary-blue);
-    padding: 1.5rem;
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-    border-radius: 50%;
+.contact-list-item i {
+	font-size: 2rem;
+	color: white;
+	background-color: var(--primary-blue);
+	padding: 1.5rem;
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	border-radius: 50%;
 }
 
-.contact-icon{
-    border-radius: 50%;
+.contact-icon {
+	border-radius: 50%;
 }
-.fa-location-dot{
-    width:80px !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.fa-location-dot {
+	width: 80px !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 #message {
-      resize: none;
+	resize: none;
 }
 
-.contact-form-section{
-    width: 100rem;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-     padding: 6rem 6rem;
-     justify-content: center;
-     
+.contact-form-section {
+	width: 100rem;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 6rem 6rem;
+	justify-content: center;
 }
 
-.contact-form-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap:10rem;
+.contact-form-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10rem;
 }
 
-.form-box{
-    background-color: var(--light-grey);
-    padding: 4rem;
+.form-box {
+	background-color: var(--light-grey);
+	padding: 4rem;
 }
 
-.form-controls{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-
+.form-controls {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
 }
 
-.form-controls label{
-    font-family: "Roboto Condensed", sans-serif;
+.form-controls label {
+	font-family: "Roboto Condensed", sans-serif;
 }
 
-.form-controls input[type="text"],input[type="email"],input[type="tel"],select,textarea{
-    padding: 0.75rem;
-    outline: none;
-    border: 1px solid #D9D9D9;
-    font-family: "Karla", sans-serif;
+.form-controls input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+	padding: 0.75rem;
+	outline: none;
+	border: 1px solid #d9d9d9;
+	font-family: "Karla", sans-serif;
 }
 
-.contact-btn{
-    outline: none;
-    border: none;
-    cursor: pointer;
+.contact-btn {
+	outline: none;
+	border: none;
+	cursor: pointer;
 }
-.social-links{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+.social-links {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
 }
-.copyright{
-    width: 120rem;
-    background-color: var(--black);
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0rem;
+.copyright {
+	width: 120rem;
+	background-color: var(--black);
+	color: white;
+	display: flex;
+	justify-content: center;
+	padding: 1rem 0rem;
 }
 
-@media (max-width: 389px) {
+@media (max-width: 390px) {
 	.hero {
 		display: flex;
 	}
@@ -639,4 +641,69 @@ p,li,a{
 		gap: 20px;
 		padding: 0 10rem;
 	}
+
+    .cta-content {
+    background-image: url(/img/cta-image.jpeg);
+    background-size: cover;
+    background-position: start;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    height: 50vh;
+    width: 100%;
+    max-width: 120rem;
+}
+
+.services-btn {
+    padding: 0.75rem 1rem;
+}
+.cta-text-content h1 {
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+
+.footer {
+	background-color: var(--black);
+	color: var(--white);
+	max-width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 0rem;
+	justify-content: center;
+}
+
+	.footer-container {
+		display: flex;
+		flex-direction: column;
+		justify-content:center;
+		align-items: flex-start;
+        gap:20px;
+        padding:1rem;   
+	}
+
+    .footer-links ul,
+li {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.logo-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 10px;
+}
+
+.copyright {
+	width: 100%;
+	background-color: var(--black);
+	color: white;
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+}
 }
