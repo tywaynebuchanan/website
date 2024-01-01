@@ -654,6 +654,78 @@ textarea {
 	padding: 1rem 0rem;
 }
 
+/* Testimonial Section*/
+
+.teams-section {
+	max-width: 120rem;
+	margin: 0 auto;
+	display: flex;
+	padding: 0rem 13rem;
+}
+
+.teams {
+	display: flex;
+	padding: 2rem 2rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.teams-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 2.5rem;
+	margin-bottom: 2.5rem;
+	background-color: var(--light-grey);
+}
+
+.content .image-box {
+	width: 100%;
+	/* border-raduis: 100px; */
+}
+.content .image-box img {
+	width: 15%;
+	border-radius: 50%;
+}
+
+.image-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1.25rem;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+.image-box h4 {
+	color: var(--text-color);
+}
+
+.image-box p {
+	font-family: "Karla", sans-serif;
+	font-size: 1rem;
+}
+
+.testimonial-text {
+	font-family: "Karla", sans-serif;
+	font-size: 1.2rem;
+	color: var(--grey);
+}
+
+.testimonials-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--light-grey);
+	padding: 2rem;
+}
+
 @media (max-width: 390px) {
 	.header {
 		padding: 0 3.2rem;
