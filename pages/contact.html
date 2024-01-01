@@ -96,14 +96,16 @@
 
 					<div class="contant-form-box">
 						<div class="form-box">
-              <form action="/" method="post">
+              <form method="post" id="form">
                 <div class="form-controls">
 								<label for="">Full Name</label>
 								<input
 									type="text"
 									name="fullname"
 									id="fullname"
-									placeholder="Your Name" />
+									placeholder="Your Name" 
+                  required
+                  />
 								
 							</div>
 
@@ -113,7 +115,9 @@
 									type="email"
 									name="email"
 									id="email"
-									placeholder="example@gmail.com" />
+									placeholder="example@gmail.com" 
+                  required
+                  />
               </div>
 
               <div class="form-controls">
@@ -122,12 +126,14 @@
 									type="tel"
 									name="phonenumber"
 									id="phonenumber"
-									placeholder="ex. +1876-555-2222" />
+									placeholder="ex. +1876-555-2222" 
+                  required
+                  />
               </div>
 
 							<div class="form-controls">
 								<label for="">Our Services</label>
-								<select name="services" id="services">
+								<select name="services" id="services" required>
 									<option disabled selected>Select</option>
 									<option value="Financial Analysis">Financial Analysis</option>
 									<option value="Financial Analysis">Financial Analysis</option>
@@ -139,7 +145,7 @@
 
               <div class="form-controls message">
                 <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
               </div>
 
                <button class="services-btn contact-btn" type = "submit"
@@ -151,19 +157,78 @@
 				</div>
 			</div>
 		</main>
+    <script src = "/scripts/main.js"></script>
 	</body>
-   <footer>
-    <div class="footer">
-      <div class="footer-container">
-        <div class="logo-section">
-          <h1>Burchells Accounting</h1>
-          <p>Address Goes Here</p>
-          <p>876-333-3333</p>
-          <div class="social-links">
+  	<footer>
+			<div class="footer">
+				<div class="footer-container">
+					<div class="logo-section">
+						<div class="logo-section-title">
+							<h1>Burchells Accounting</h1>
+							<p>Address Goes Here</p>
+							<p>876-333-3333</p>
+						</div>
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+						<div class="social-links">
+							<i class="fa-brands fa-facebook"></i>
+							<i class="fa-brands fa-twitter"></i>
+							<i class="fa-brands fa-linkedin"></i>
+							<i class="fa-brands fa-instagram"></i>
+						</div>
+					</div>
+					<div class="footer-links-section">
+						<div class="footer-links">
+							<div class="footer-links-title">
+								<h3>Company</h3>
+							</div>
+							<ul>
+								<li class="footer-link"><a href="/pages/about.html">About Us</a></li>
+								<li class="footer-link"><a href="/pages/products.html">Products</a></li>
+								<li class="footer-link"><a href="/pages/about.html">Our Team</a></li>
+								<li class="footer-link"><a href="/index.html">Testimonials</a></li>
+								<li class="footer-link"><a href="/pages/faqs.html">FAQs</a></li>
+								<li class="footer-link"><a href="/pages/news.html">News</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="footer-links-section">
+						<div class="footer-links">
+							<div class="footer-links-title">
+								<h3>Services</h3>
+							</div>
+							<ul>
+								<li class="footer-link">Financial Analysis</li>
+								<li class="footer-link">Tax Planning</li>
+								<li class="footer-link">Budget Analysis</li>
+								<li class="footer-link">Bookkeeping</li>
+								<li class="footer-link">Virtual Consulting</li>
+								<li class="footer-link">Financial Advisory</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="footer-links-section">
+						<div class="footer-links">
+							<div class="footer-links-title">
+								<h3>Support</h3>
+							</div>
+
+							<ul>
+								<li class="footer-link">Help Center</li>
+								<li class="footer-link">Privacy Policy</li>
+								<li class="footer-link">Terms and Conditions</li>
+								<li class="footer-link">Contact Us</li>
+								<li class="footer-link">FAQs</li>
+								<li class="footer-link">News</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+
+				<p>Copyright &copy; Burchell Accounting Services 2023</p>
+			</div>
+		</footer>
 </html>

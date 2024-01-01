@@ -20,6 +20,7 @@ body {
 
 html {
 	overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -30,7 +31,7 @@ h5 {
 	font-family: "Roboto Condensed", sans-serif;
 }
 
-p{
+p,li,a{
     font-family: "Karla",sans-serif;
 }
 
@@ -385,7 +386,7 @@ p{
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
-    padding: 6rem 0rem;
+    padding: 6rem 0rem 0rem;
 }
 
 .cta-content {
@@ -424,6 +425,61 @@ p{
     font-family: "Karla",sans-serif;
     font-size: 1rem;
 }
+
+/* Footer Section CSS*/
+
+.footer{
+    background-color: var(--black);
+    color: var(--white);
+     max-width: 120rem;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+    padding: 6rem 0rem;
+    justify-content: center;
+    
+}
+
+/* Footer Section CSS End*/
+.footer-container  {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 200px;
+}
+
+.logo-section-title{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.logo-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:130px;
+}
+
+.footer-links-title{
+    margin-bottom:10px;
+}
+
+.footer-links ul,li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-links a{
+    text-decoration: none;
+}
+.footer-links a:visited{
+    color: white;
+    
+}
+
+/* Contact Section*/
 
 
 
@@ -556,6 +612,19 @@ p{
     outline: none;
     border: none;
     cursor: pointer;
+}
+.social-links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.copyright{
+    width: 120rem;
+    background-color: var(--black);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem;
 }
 
 @media (max-width: 389px) {
