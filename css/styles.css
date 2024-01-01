@@ -37,8 +37,12 @@ a {
 	font-family: "Karla", sans-serif;
 }
 
+.pd-6{
+	padding: 6rem 0rem 0rem;
+}
+
 .heading-primary {
-	font-size: 60px;
+	font-size: 3.5rem;
 	line-height: 0.9;
 	margin-bottom: 2rem;
 	font-weight: 400;
@@ -93,6 +97,7 @@ a {
     background: none;
     cursor: pointer;
     display: none;
+	z-index:1;
 }
 
 .icon-mobile-nav{
@@ -111,7 +116,7 @@ a {
 	background-color: var(--primary-blue);
 }
 .sub-title {
-	margin-bottom: 10px;
+	margin-bottom: 0.625rem;
 }
 .hero {
 	max-width: 130rem;
@@ -199,13 +204,13 @@ a {
 .about-content {
 	display: flex;
 	flex-direction: column;
-	gap: 40px;
+	gap: 2.5rem;
 }
 
 .about-us-pictures {
 	display: flex;
 	justify-content: space-between;
-	gap: 5px;
+	gap: 0.313rem;
 }
 
 .about-us-images {
@@ -243,7 +248,7 @@ a {
 .values-list {
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
+	gap: 1.875rem;
 }
 
 .values-list-item {
@@ -293,18 +298,18 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 20px;
+	gap: 1.25rem;
 }
 
 .service-boxes img {
-	width: 75px;
+	width: 4.688rem;
 }
 
 .services-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	justify-content: space-between;
-	gap: 20px;
+	gap: 1.25rem;
 	margin-bottom: 40px;
 	padding: 0 10rem;
 }
@@ -322,7 +327,7 @@ a {
 	color: var(--white);
 	text-decoration: none;
 	font-family: "Roboto Condensed", sans-serif;
-	border-raduis: 5px;
+	border-raduis: 0.313rem;
 }
 
 .services-btn:hover {
@@ -348,8 +353,8 @@ a {
 .testimonials-content {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	gap: 40px;
-	margin-bottom: 40px;
+	gap: 2.5rem;
+	margin-bottom: 2.5rem;
 	background-color: var(--light-grey);
 }
 
@@ -367,13 +372,13 @@ a {
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	gap: 20px;
+	gap: 1.25rem;
 }
 
 .content {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 1.25rem;
 }
 
 .image-box h4 {
@@ -425,14 +430,14 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 20px;
+	gap: 1.25rem;
 	width: 100%;
 	margin: 0 auto;
 	max-width: 50rem;
 }
 
 .cta-text-content h1 {
-	font-size: 60px;
+	font-size: 3.75rem;
 	font-weight: 300;
 }
 
@@ -460,19 +465,19 @@ a {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 200px;
+	gap: 12.5rem;
 }
 
 .logo-section-title {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 1.25rem;
 }
 .logo-section {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	gap: 130px;
+	gap: 8.125rem;
 }
 
 .footer-links-title {
@@ -495,8 +500,17 @@ li {
 
 /* Contact Section*/
 
-.contact-hero {
-	background-color: var(--primary-blue);
+
+
+.contact-hero-content p{
+	color: var(--white);
+	z-index:1;
+}
+
+
+
+.contact-hero-content a{
+	z-index:1;
 }
 
 .contact-container {
@@ -527,19 +541,23 @@ li {
 		0,
 		0,
 		0.8
-	); /* Adjust the alpha (last value) to control the darkness */
+	);
+	z-index:0;
 }
 
 .contact-hero-content {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width:60rem;
+	margin: 0 auto;
+	text-align: center;
+	gap:20px;
 }
 
+
 .contact-hero-content h1 {
-	font-size: 60px;
-	font-weight: 400;
 	z-index: 1;
 }
 
@@ -663,6 +681,29 @@ textarea {
 		font-weight: 400;
 		text-align: center;
 	}
+
+	.contact-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-image: url(/img/cta-image.jpeg);
+    background-size: cover;
+    background-position: start;
+    color: #fff;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
     .sub-title {
     margin-bottom: 10px;
@@ -834,7 +875,7 @@ textarea {
     }
 
     .main-nav{
-        background-color:whitesmoke;
+        background-color:var(--white);
         position: absolute;
         top: 0;
         left: 0;
@@ -851,6 +892,7 @@ textarea {
         pointer-events: none;
         /* Hide it from screen readers*/
         visibility: none;
+		z-index:1;
     }
 
     .nav-open .main-nav

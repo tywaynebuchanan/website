@@ -1,7 +1,5 @@
-const formSubmit = document.getElementById("form").addEventListener("submit",(e)=>{
-    e.preventDefault();
-
-    const formData = new FormData(e.target);
-    console.log(formData.values);
+const btn = document.querySelector(".btn-mobile-nav");
+const header = document.querySelector(".header");
+btn.addEventListener('click',()=>{
+    header.classList.toggle("nav-open");
 })
-
