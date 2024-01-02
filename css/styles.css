@@ -48,6 +48,13 @@ a {
 	font-weight: 400;
 }
 
+.heading-secondary {
+	font-size: 2rem;
+	line-height: 0.9;
+	margin-bottom: 2rem;
+	font-weight: 400;
+}
+
 .white {
 	color: var(--white);
 }
@@ -765,6 +772,50 @@ textarea {
 	padding: 2rem;
 }
 
+/*FAQ Section /Page*/
+
+.faq-heading {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.faq-section {
+	padding: 4.8rem 0px 9.6rem;
+}
+
+.faqs {
+	max-width: 130rem;
+	margin: 0px auto;
+	padding: 2rem 3rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	background-color: var(--light-grey);
+}
+
+.showAdd {
+	display: none;
+}
+.faq-heading ion-icon {
+	font-size: 3rem;
+}
+.faq-text {
+	color: var(--grey);
+	font-size: 1.2rem;
+	font-family: "Karla", sans-serif;
+	transition: 0.5s ease-out;
+	margin-bottom: 1rem;
+}
+
+.hr {
+	border-top: 1px solid white;
+}
+
+.faq-content {
+	margin-bottom: 1rem;
+}
+
 /* .fa-location-dot {
     display: flex;
     justify-content: center;
@@ -787,6 +838,28 @@ textarea {
 		margin-bottom: 2rem;
 		font-weight: 400;
 		text-align: center;
+	}
+
+	.faq-text {
+		color: var(--grey);
+		font-size: 0.75rem;
+		font-family: "Karla", sans-serif;
+		transition: 0.5s ease-out;
+		margin-bottom: 1rem;
+	}
+	.faq-section {
+		padding: 3rem 0px 3rem;
+	}
+
+	.section-about {
+		padding: 1rem 0 1rem 0;
+	}
+
+	.heading-secondary {
+		font-size: 1rem;
+		line-height: 0.9;
+		margin-bottom: 2rem;
+		font-weight: 400;
 	}
 
 	.contact-container {
@@ -1075,9 +1148,9 @@ textarea {
 	}
 
 	.team-member-content {
-    background-color: var(--light-grey);
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
+		background-color: var(--light-grey);
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
 }
