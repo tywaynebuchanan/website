@@ -654,13 +654,25 @@ textarea {
 	padding: 1rem 0rem;
 }
 
-/* Testimonial Section*/
+/* Teams Section*/
 
 .teams-section {
 	max-width: 120rem;
 	margin: 0 auto;
 	display: flex;
 	padding: 0rem 2rem;
+}
+
+.team-social-links {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.team-social-links .fa-facebook,
+.fa-linkedin,
+.fa-instagram {
+	font-size: 1.25rem;
 }
 
 .teams {
@@ -673,12 +685,17 @@ textarea {
 
 .teams-content {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	gap: 2.5rem;
 	margin-bottom: 2.5rem;
-	background-color: var(--light-grey);
 }
 
+.team-member-content {
+	background-color: var(--light-grey);
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
 .content .image-box {
 	width: 100%;
 	/* border-raduis: 100px; */
@@ -696,8 +713,26 @@ textarea {
 	gap: 1.25rem;
 }
 
-.team-image-box img{
-	width: 75%;
+.team-image-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1.25rem;
+}
+
+.team-image-box img {
+	width: 100%;
+	max-width: 700px;
+	display: flex;
+	flex-direction: column;
+}
+
+.team-member-text {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 2rem;
 }
 
 .content {
@@ -1009,15 +1044,40 @@ textarea {
 	}
 
 	.contact-list-item i {
-    font-size: 0.75rem;
-    color: white;
-    background-color: var(--primary-blue);
-    padding: 1.5rem;
+		font-size: 0.75rem;
+		color: white;
+		background-color: var(--primary-blue);
+		padding: 1.5rem;
+		display: flex;
+		align-items: center;
+		margin-right: 10px;
+		border-radius: 50%;
+	}
+
+	.teams {
+		display: flex;
+		padding: 1rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.teams-content {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2.5rem;
+		margin-bottom: 2.5rem;
+	}
+	.teams-section {
+		max-width: 100%;
+		margin: 0 auto;
+		display: flex;
+		padding: 1rem;
+	}
+
+	.team-member-content {
+    background-color: var(--light-grey);
     display: flex;
-    align-items: center;
-    margin-right: 10px;
-    border-radius: 50%;
+    flex-direction: column;
+    gap: 1rem;
 }
-
-
 }
