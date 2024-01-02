@@ -41,6 +41,11 @@ a {
 	padding: 6rem 0rem 0rem;
 }
 
+.logo{
+	displa
+	width:80%;
+}
+
 .heading-primary {
 	font-size: 3.5rem;
 	line-height: 0.9;
@@ -941,8 +946,8 @@ textarea {
 
 @media (max-width: 390px) {
 	.header {
-		padding: 0 3.2rem;
-	}
+    padding: 0.75rem;
+}
 
 	.main-nav-list {
 		gap: 3.2rem;
