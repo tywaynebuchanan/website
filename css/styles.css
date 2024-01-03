@@ -346,7 +346,7 @@ a {
 }
 
 .testimonials-section {
-	max-width: 120rem;
+	max-width: 100%;
 	margin: 0 auto;
 	display: flex;
 	padding: 0rem 13rem;
@@ -1306,5 +1306,20 @@ textarea {
     gap: 1.25rem;
     margin-bottom: 20px;
     padding: 1rem;
+}
+
+.contact-list-item i {
+	font-size: 1rem;
+	color: white;
+	background-color: var(--primary-blue);
+	padding: 1.5rem;
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+.fa-location-dot {
+	width: 65px !important;
 }
 }
