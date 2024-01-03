@@ -941,6 +941,11 @@ textarea {
 	color: var(--light-grey);
 }
 
+.error-message{
+	padding: 1rem 0rem;
+	color: var(--black);
+}
+
 
 
 @media (max-width: 450px) {
